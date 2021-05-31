@@ -23,7 +23,8 @@ def moves(gid: str, file: int, rank: int):
     position = engine.position.Position(file, rank)
     moves = engine.game.moves(game, position)
 
-    return dict(moves=moves)
+    player = game.board[position].owner
+    return dict(moves=moves, player=player.value)
 
 
 @app.route("/<gid>/move/<int:ofile>/<int:orank>/<int:dfile>/<int:drank>")
