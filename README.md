@@ -1,1 +1,7 @@
-# :construction: WIP stonedchess - server WIP :construction:
+# stonedchess - server
+
+## usage
+
+```bash
+python src/app.py
+```
